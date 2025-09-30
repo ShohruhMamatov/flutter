@@ -748,7 +748,7 @@ class ShopCartExample extends StatelessWidget {
   const ShopCartExample({super.key});
   @override
   Widget build(BuildContext context) {
-    return Card(child: ListTile(title: const Text('Shop (Provider)'), subtitle: const Text('Open product screen or view cart'), trailing: Row(mainAxisSize: MainAxisSize.min, children: [IconButton(icon: const Icon(Icons.store), onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (_) => const ProductScreen()))), IconButton(icon: const Icon(Icons.shopping_cart), onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (_) => const CartScreen())))]));
+    return Card(child: ListTile(title: const Text('Shop (Provider)'), subtitle: const Text('Open product screen or view cart'), trailing: Row(mainAxisSize: MainAxisSize.min, children: [IconButton(icon: const Icon(Icons.store), onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (_) => const ProductScreen()))), IconButton(icon: const Icon(Icons.shopping_cart), onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (_) => const CartScreen())))])));
   }
 }
 class ProductScreen extends StatelessWidget {
